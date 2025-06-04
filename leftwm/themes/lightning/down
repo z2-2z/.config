@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+killall -wq picom polybar
+leftwm command "UnloadTheme"
+

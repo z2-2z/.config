@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+ctrl_file="$XDG_RUNTIME_DIR/night-light"
+
+if [ -f "$ctrl_file" ];
+then
+	redshift -m randr -x
+	rm -f "$ctrl_file"
+else
+	redshift -m randr -P -O 2685
+	touch "$ctrl_file"
+fi

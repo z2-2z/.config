@@ -1,0 +1,13 @@
+[window]
+decorations = "None"
+opacity = 0.85
+blur = true
+
+[font]
+size = 8
+
+[colors]
+primary.background = "#000000"
+
+[cursor]
+style.shape = "Beam"

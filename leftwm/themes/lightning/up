@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+cd "$(dirname $0)"
+
+leftwm-command "LoadTheme $PWD/theme.ron"
+
+feh --bg-fill ./bg.jpg
+picom --config ./picom.conf --backend glx -f &
+polybar &
+

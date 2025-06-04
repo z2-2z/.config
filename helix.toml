@@ -1,0 +1,38 @@
+theme = "catppuccin_mocha"
+
+[editor]
+middle-click-paste = true
+auto-completion = false
+bufferline = "always"
+auto-pairs = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = [
+  "diagnostics",
+  "position",
+  "selections",
+]
+center = []
+right = []
+
+[keys.normal]
+C-s = ":w"
+C-q = ":buffer-close"
+C-l = ":buffer-next"
+C-h = ":buffer-previous"
+C-n = ":n"
+C-c = ":clipboard-yank"
+
+[keys.insert]
+C-s = ":w"
+C-q = ":buffer-close"
+C-l = ":buffer-next"
+C-h = ":buffer-previous"
+C-n = ":n"
+
+
